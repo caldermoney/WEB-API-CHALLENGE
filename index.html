@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Javascript Web API Challenge</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./Assets/css/style.css'>
+</head>
+<body>
+    <!--Main outer div-->
+    <div class="outer-container">
+
+        <!--Top bar Section-->
+        <div class="top-bar">
+            <button>View Highscores</button>
+            <p>Timer 0:00</p>
+        </div>
+        <!--Inner div-->
+        <div class="inner-container">
+            <!--Main header/quiz intro-->
+            <header class="quiz-intro">
+                <h1>Welcome to the quiz</h1>
+                <p>The quiz will consist of Javascript questions.</p>
+                <button>Start Quiz!</button>
+            </header>
+
+            <!--Main quiz content-->
+            <main>
+                <section class="questions-screens">
+                    <ul>
+                        <li><button>Answer 1</button></li>
+                        <li><button>Answer 2</button></li>
+                        <li><button>Answer 3</button></li>
+                        <li><button>Answer 4</button></li>
+                        <li><button>Answer 5</button></li>
+                    </ul>
+                </section>
+
+                <section id="finish-screen" class="quiz-finish-screen">
+                    <h1>All done!</h1>
+                    <p></p>
+                    <form>
+                        <label>Enter initials:
+                        <input type="text" id="init">
+                        </label>
+                        <button>Submit</button>
+                    </form>
+                </section>
+
+            </main>
+        </div>
+    </div>
+    <script src='./Assets/js/script.js'></script>
+</body>
+</html>
