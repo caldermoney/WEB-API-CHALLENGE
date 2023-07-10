@@ -61,10 +61,22 @@ main {
     background-color: aqua;
 }
 
-ul {
-    list-style: none;
-}
 
-li {
-    display: none;
-}
+.questions-screens {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  button {
+    padding: 0.25rem;
+  }
+  
