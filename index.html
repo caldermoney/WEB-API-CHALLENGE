@@ -8,16 +8,12 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./Assets/css/style.css'>
 </head>
 <body>
-    <!--Main outer div-->
-    <div class="outer-container">
-
         <!--Top bar Section-->
         <div class="top-bar">
-            <button>View Highscores</button>
-            <p>Timer 0:00</p>
+            <button id="highscores">View Highscores</button>
+            <p id="timer">Timer 1:00</p>
         </div>
-        <!--Inner div-->
-        <div class="inner-container">
+        <section class="mainPageStyle">
             <!--Main header/quiz intro-->
             <header class="quiz-intro">
                 <h1>Welcome to the quiz</h1>
@@ -27,11 +23,17 @@
 
             <!--Main quiz content-->
             <main>
-                <div class="questions-screens"></div>
+                <!--Questions display-->
+                <div class="questions-screens">
+                    <h2 class="question"></h2>
+                    <div class="option"></div>
 
-                <section id="finish-screen" class="quiz-finish-screen">
+                </div>
+                
+                <!--Finish Screen-->
+                <section class="finish-screen">
                     <h1>All done!</h1>
-                    <p></p>
+                    <p>Your final score is: <span id="finalScore"></span></p>
                     <form>
                         <label>Enter initials:
                         <input type="text" id="init">
@@ -40,9 +42,10 @@
                     </form>
                 </section>
 
+                <div class="highscores-list"></div>
             </main>
-        </div>
-    </div>
+        </section>
+    <script src="./assets/js/questions.js"></script>
     <script src='./assets/js/script.js'></script>
 </body>
 </html>

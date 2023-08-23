@@ -14,13 +14,6 @@ p {
     color: black;
 }
 
-.outer-container {
-    padding: 10px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
 
 .top-bar {
     margin-top: 1rem;
@@ -30,25 +23,16 @@ p {
     float: right;
 }
 
-.inner-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    height: 80vh;
-    width: 80%;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
 .top-bar button {
     outline: none;
     background-color: black;
     color: white;
     float: left;
+}
+.mainPageStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header button {
@@ -58,25 +42,28 @@ header button {
 main {
     height: 50vh;
     margin-top: 1.5rem;
-    background-color: aqua;
 }
 
 
 .questions-screens {
-    background-color: #f2f2f2;
     padding: 20px;
   }
 
   ul {
     list-style: none;
+    padding-top: 1rem;
   }
 
   li {
-    display: inline-block;
-    padding: 1rem;
+    padding: 0.50rem;
   }
 
   button {
     padding: 0.25rem;
   }
   
+  .finish-screen {
+    display: none;
+}
+
+
